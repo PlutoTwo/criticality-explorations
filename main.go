@@ -11,6 +11,13 @@ import (
 	j1Domain "github.com/jupiterone/jupiterone-client-go/jupiterone/domain"
 )
 
+// MODIFY THIS
+var assetNames = []string{"Device", "CodeRepo"}
+var weights = &Weights{
+	AgeInDays:    10,
+	Dependencies: 10,
+}
+
 func areWeightsValid(weights *Weights) bool {
 	if weights == nil {
 		return false
@@ -140,13 +147,6 @@ func getConfig() Config {
 }
 
 func main() {
-	// MODIFY THIS
-	assetNames := []string{"Device", "CodeRepo"}
-	weights := &Weights{
-		AgeInDays:    10,
-		Dependencies: 10,
-	}
-
 	fmt.Println("begin acquiring criticality data...")
 
 	config := getConfig()
