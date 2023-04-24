@@ -6,7 +6,7 @@ NOTE: To be clear, please note that this project is provided for your exploratio
 
 ## Implications On Your JupiterOne Environment
 
-This script *DOES NOT* create or delete entities and relationships in your JupiterOne environment. The only affect this will have on your JupiterOne environment is that a property titled `criticalityScore` will be added onto the assets that you have explicitly specified in this script. Removing that property is trivial and you are also free to ignore its existence entirely.
+This script *DOES NOT* create or delete entities and relationships in your JupiterOne environment. The only effect this will have on your JupiterOne environment is that a property titled `criticalityScore` will be added onto the assets that you have explicitly specified in this script. Removing that property is trivial and you are also free to ignore its existence entirely.
 
 ## Getting Started
 
